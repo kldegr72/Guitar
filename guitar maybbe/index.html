@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfc5c5;
+            color: white;
+        }
+        
+        nav {
+            background-color: black;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-bar {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+            padding: 10px 20px;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: grey;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .h_card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border: 1px solid grey;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+        }
+
+        .h_card img {
+            width: 40%;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .h_container {
+            width: 55%;
+        }
+
+        .h_card h3 {
+            font-size: 2vw;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .h_card button {
+            padding: 10px 15px;
+            background-color: aqua;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .h_card button a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        @media (max-width: 610px) {
+            .h_card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .h_card img {
+                width: 80%;
+                margin: 0 auto 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <ul class='nav-bar'>
+        
+        <input type='checkbox' id='check' />
+        <span class="menu">
+          <a href="index.html" class="nav_item" style="color: aqua;">
+            <li >Home</li>
+        </a>
+        <a href="form.html" class="nav_item">                
+            <li >Form</li>
+        </a>
+        <a href="contact.html" class="nav_item" >
+            <li >Contact & Details  </li>
+        </a>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h2 style="color: #1e1e1e;">About Guitars</h2>
+        
+        <div class="h_card">
+            <img src="gettyimages-2225160-612x612.jpg" alt="Acoustic Guitar">
+            <div class="h_container">
+                <h3>Acoustic</h3>
+                <p>Acoustic guitars are versatile instruments used for various purposes including solo performance, accompaniment, songwriting, recording, live concerts, and music therapy.</p>
+                <button><a href="classical.html">Explore</a></button>
+            </div>
+        </div>
+
+        <div class="h_card">
+            <img src="h_bass.jpg" alt="Bass Guitar">
+            <div class="h_container">
+                <h3>Metal</h3>
+                <p>Rock music pulsates with electrifying energy, raw emotion, and powerful guitar riffs, echoing the spirit of defiance and freedom.</p>
+                <button><a href="classical.html">Explore</a></button>
+            </div>
+        </div>
+
+        <div class="h_card">
+            <img src="h_electric guitar.jpg" alt="Electric Guitar">
+            <div class="h_container">
+                <h3>Grunge</h3>
+                <p>Grunge music, born from the Pacific Northwest's atmosphere, embodies raw emotion and gritty guitar riffs, challenging mainstream norms.</p>
+                <button><a href="#">Explore</a></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
